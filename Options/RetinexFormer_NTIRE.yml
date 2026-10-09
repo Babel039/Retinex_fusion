@@ -12,7 +12,7 @@ datasets:
     name: TrainSet
     type: Dataset_PairedImage
     dataroot_gt: data/NTIRE/train/target
-    dataroot_lq: data/NTIRE/train/input
+    dataroot_lq: data/NTIRE/train/Input
     geometric_augs: true
 
     filename_tmpl: '{}'
@@ -44,8 +44,8 @@ datasets:
   val:
     name: ValSet
     type: Dataset_PairedImage
-    dataroot_gt: data/NTIRE/mini_val/target
-    dataroot_lq: data/NTIRE/mini_val/input
+    dataroot_gt: data/NTIRE/minival/target
+    dataroot_lq: data/NTIRE/minival/input
     io_backend:
       type: disk
 
